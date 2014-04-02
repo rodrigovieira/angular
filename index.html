@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<meta charset="utf-8">
+    <head> <script type="text/java" src="http://code.jquery.com/jquery-2.1.0.js"></script>
+        <script type="text/javascript" src="js/angular1.2.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+    <script type="text/java" src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <script src="angular.js" type="text/javascript"></script>
+    <script src="js/underscore.js" type="text/javascript"></script>
+
+    <title>Desafio</title>
+</head>
+<body ng-controller="Ctrl">
+
+    <div class="container">
+            <h5>{{title}}</h5>
+
+        <table class="table">
+            <thead>
+                <th>Img</th>
+                <th>Domain</th>
+                <th>title</th>
+                <th>Autor</th>
+
+            </thead>
+            <tbody>
+                <tr ng-repeat="venda in vendas">
+                    <td><img ng-src="{{venda.data.thumbnail}}"/></td>
+                    <td>{{venda.data.domain}}</td>
+                    <td>{{venda.data.title}}</td>
+                    <td>{{venda.data.author}}</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+</body>
+</html>
+
+
+
+<script type="text/ng-template" id="template.html">
+
+</script>
+
+
